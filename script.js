@@ -75,5 +75,11 @@ function nav(){
 
    
 }
-
+function hamburger(){
+  let menu=document.querySelector(".ham");
+  menu.addEventListener("click",()=>{
+    document.querySelector(".left").style.left="0px";
+  })
+}
 nav();
+hamburger();

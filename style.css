@@ -71,11 +71,15 @@ nav{
 .name{
     font-size: 3rem;
     font-weight: 700;
+    
 
 }
 .name div{
-    color: white;
+    color: white;  
+    display: inline;
 }
+
+
 #aboutme{
     text-decoration: none;
     font-weight: 700;
@@ -651,11 +655,12 @@ nav{
     transition: 0.3s ease-in-out;
 }
 .left{
-   height: 100vh;
-   width: 50vw;
+   height: 100%;
+   width: 300px;
     background-color: black;
     z-index: 1;
-
+    position: relative;
+    left: -100%;
 }
 /* .nav-elements ul.elements li a:hover{
    color: black;
@@ -667,7 +672,7 @@ nav{
         margin-top: 60px;
     }
     .first_page{
-        height: 60vh;
+        height: 90vh;
     }
     .name{
         width: max-content;
@@ -683,14 +688,14 @@ nav{
     width: 96px;
    }
    .second_page{
-    height: 40vh;
+    height: 70vh;
    }
    .page4{
-    height: 30vh;
+    height: 50vh;
    }
    
    .page5{
-    height: 100vh;
+    height: 170vh;
    }
    .Projects{
     display: grid;
@@ -725,10 +730,13 @@ padding: 0px 25px;
     .separate img{
         width: 97.5vw;
       margin-top: -3px;
-      height: 7vh;
+      height: 10vh;
     }
    .second_page{
-    height: 50vh;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    }
    .separate{
     margin: 3px;
@@ -738,16 +746,17 @@ padding: 0px 25px;
     row-gap: 30px;
  }
  .page4{
-    height: 45vh;
+    height: 65vh;
  }
  #margin{
     height: 6vh;
  }
  .page5{
-    height: 120vh;
+    height: 100vh;
  }
  .communication{
     height: 15vh;
+    width: 102vw;
  }
 }
 @media screen and (max-width:800px){
@@ -760,5 +769,99 @@ padding: 0px 25px;
     }
     .ham{
         display: flex;
+    }
+    .name div{
+        display: block;
+     }
+   .Projects{
+    grid-template-columns: auto;
+    
+   }
+   .second_page{
+    margin-top: -10px;
+   }
+   .page5{
+    height: auto;
+     padding: 20px;
+   }
+  
+}
+@media screen and (min-height :1100px) and (max-width:1200px){
+    .first_page{
+        height: 85vh;
+    }
+    .second_page{
+        height: 60vh;
+        
+    }
+    .page4{
+        height: 30vh;
+    }
+    .page5{
+        height: 100vh;
+    }
+  
+}
+@media screen and (max-width:600px){
+    .intro div img{
+        width: 60vw;
+    }
+    .second_page{
+        height: 90vh;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    #margin{
+        height: 8vh;
+    }
+    #h5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .input{
+        width: 65vw;
+    }
+    #Message{
+        width: 65vw;
+    }
+    .information{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .information p{
+        margin-top: 8px;
+    }
+    .icon img{
+        width: 60px;
+    }
+    .communication{
+        justify-content: space-between;
+    }
+    .communicate{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:550px){
+    #me{
+        width: 30vh;
+    }
+    .second_page{
+        height: 110vh;
+    }
+    .separate img{
+        height: 6vh;
+    }
+    .page4{
+        height: 100vh;
+    }
+    #h6{
+        width: 300px;
+    }
+    .page6 p{
+        width: 80%;
     }
 }
