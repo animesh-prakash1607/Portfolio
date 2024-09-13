@@ -1,196 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
-    
+
 </head>
+
 <body>
-   <div class="main">
-    <div class="first_page">
+    <div class="main">
+       
+        <div class="first_page" id="home">
             <nav class="nav">
                 <div class="logo">
-                    <img src="logo.png" alt="" srcset="">
+                    <img src="assets/img/logo.png" alt="" srcset="">
                 </div>
-                <div class="nav-elements">
-                    <ul class="elements">
-                        <li class="color"><a href="#home">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li class="bg-color" id="contact"><a href="#contact">Contact</a></li>
-                    </ul>
+                <div class="ham">
+                    <img src="assets/svg/hamburger.svg" alt="">
                 </div>
                
-            </nav>
-       
+                <div class="nav-elements">
+                    <ul class="elements">
+                        <li id="color"><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li  id="contact"><a href="#contacts">Contact</a></li>
+                        <span></span>
+                    </ul>
+                </div>
+    
+            </nav>          
+            <div class="left">
+                    
+            </div>
             <div class="content">
                 <div class="intro">
                     <div class="name">
-                        <span>Hi, My name is </span> 
-                        <span class="color">  Animesh Prakash.</span>
-                      </div>
+                        <div>Hi, My name is <span style="color: #00ff97;">Animesh Prakash</span></div>
+                    </div>
                     <span class="talent">I am a </span>
-                     <span id="element2" class="color"></span>
-                     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-                     <ul class="intro_app">
-                        <li class="app"><a href="https://www.linkedin.com/feed/"><img src="linkedin.svg" alt=""></a></li>
-                        <li class="app"><a href="https://leetcode.com/"> <img src="leetcode.svg" alt=""></a></li>
-                        <li class="app"><a href="https://github.com/"><img src="github.svg" alt=""></a></li>
-                    </ul>
-                    <p class="details color">
-                        I create innovative web solutions. As a Web Developer and Programmer,
-                         I transform ideas into efficient, user-friendly experiences. Let’s work 
-                         together to bring your project to life!
-                    </p>
-                    <img src="Arrow-2.png" width="550px" alt="">
+                    <span id="element2" class="color"></span>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    
+                   
+                   
+                  <div> <img src="assets/img/Arrow-2.png" width="550px" style="margin-top: 30px;" alt=""></div> 
+                </div>
+
+                <div class="photo">
+            
+                     <img id="me" src="assets/img/photo1.webp" alt=""> 
+                </div>
+
+            </div>
+            <div class="software">
+                <ul class="intro_app">
+                    <li class="app"><a href="https://www.linkedin.com/feed/"><img src="assets/svg/linkedin.svg"
+                                alt=""></a></li>
+                    <li class="app"><a href="https://leetcode.com/"> <img src="assets/svg/leetcode.svg" alt=""></a>
+                    </li>
+                    <li class="app"><a href="https://github.com/"><img src="assets/svg/github.svg" alt=""></a></li>
+                    <li class="line"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="separate"><img src="assets/svg/curve2.svg" alt=""></div>
+        <div class="second_page" id="about">
+            <h1 class="heading " id="aboutme">LET ME <span class="color">INTRODUCE</span> MYSELF</h1>
+            <div class="content2">
+                <div class="about">
+                    <div>Hi, I'm <span class="color">Animesh Prakash</span> ,Web Developer and Programmer.</div>
+                    <!-- <p>I am currently pursuing a diploma in Computer Science at Guru Nanak Dev College, where I am
+                        building a strong foundation in both theoretical and practical aspects of technology. </p>
+                    <p>My expertise includes HTML, CSS, JavaScript, C, C++, and Data Structures and Algorithms (DSA). I
+                        am passionate about web development and programming, always striving to create efficient,
+                        scalable, and user-friendly solutions. </p>
+                    <p> I enjoy problem-solving and continuously learning new technologies to enhance my skill set. I
+                        look forward to applying my knowledge to real-world projects and growing as a developer in this
+                        ever-evolving field.</p> -->
+                        <div>I am currently pursuing a diploma in Computer Science at Guru Nanak Dev College, where I am
+                            building a strong foundation in both theoretical and practical aspects of technology.</div>
+                            <div>My expertise includes HTML, CSS, JavaScript, C, C++, and Data Structures and Algorithms (DSA). I
+                                am passionate about web development and programming, always striving to create efficient,
+                                scalable, and user-friendly solutions.</div>
+                            <div>I enjoy problem-solving and continuously learning new technologies to enhance my skill set. I
+                                look forward to applying my knowledge to real-world projects and growing as a developer in this
+                                ever-evolving field.</div>
+                    <div class="arrow"><img src="assets/svg/line2.svg" alt=""></div>
+                </div>
+                    <div class="grid">
+                        <div class="grid_data">Name: <span class="color">Animesh Prakash</span></div>
+                        <div class="grid_data">Age: <span class="color">17</span></div>
+                        <div class="grid_data">Email: <span class="color">animeshp1607@gmail.com</span></div>
+                        <div class="grid_data">From: <span class="color">New Delhi,delhi</span></div>
+                    </div>
+                
+            </div>
+
+        </div>
+        <!-- <div class="page3" id="third_p">
+            <div class="separate"><img src="assets/svg/curve.svg" alt=""></div>
+            <div class="heading  heading2 hov" id="h2">Skills</div>
+            <div class="skills">
+                <div class="skill shadow" style="background-color: #00ff97; color: black;">
+                    <img class="image1" src="assets/img/development-1.png" alt="">
+                    <p>Frontend Developer</p>
+                    <img class="image2" src="assets/img/frontend.png" alt="">
+                </div>
+                <div class="skill shadow">
+                    <img class="image1" src="assets/img/pro.png" alt="">
+                    <p>Programmer</p>
+                    <img class="image2" src="assets/img/programmer.jpg" alt="">
+                </div>
+                <div class="skill shadow"></div>
+                <div class="skill shadow"></div>
+
+            </div>
+        </div> -->
+        <div class="separate"><img id="margin" src="assets/svg/curve.svg" alt=""></div>
+        <div class="page4" id="skills">
+            <div class="heading" id="h4">Here are Numerous Topics That
+                Will Enhance My Skills</div>
+            <div class="lan" id="lan1">
+                <div class="language hov"> <img src="assets/svg/html.svg" alt="">HTML</div>
+                <div class="language hov"> <img src="assets/svg/css.svg" alt=""> CSS</div>
+                <div class="language hov"> <img src="assets/svg/js.svg" alt=""> JavaScript</div>
+            </div>
+            <div class="lan">
+                <div class="language hov"> <img src="assets/svg/c.svg" alt=""> C</div>
+                <div class="language hov"> <img src="assets/svg/cpp.svg" alt=""> C++</div>
+            </div>
+        </div>
+        <div class="separate"><img src="assets/svg/curve2.svg" alt=""></div>
+        <div class="page5" id="projects">
+          <div class="heading  heading2 hov" id="h5">Projects</div>
+            <div class="Projects">
+               
+            <div class="project-info">
+                <img src="assets/img/netflix.png" alt="">
+                <div class="language_requi">
+                  <div>HTML</div>
+                  <div>CSS</div>
+                </div>
+                <div class="project-detail">
+                <div class="project_name">Netflix Clone</div>
+                <div class="date">August 2024</div>
+                 <div class="description"> This project demonstrates my ability to build
+                    visually appealing and responsive web interfaces, closely mimicking the look and
+                    feel of Netflix.</div>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <img src="assets/img/" alt="">
+                <div class="language_requi">
+                  <div>HTML</div>
+                  <div>CSS</div>
+                  <div>JavaScript</div>
+                </div>
+                <div class="project-detail">
+                    <div class="project_name">Spotify Clone</div>
+                    <div class="date">August 2024</div>
+                     <div class="description">  This project highlights
+                        my ability to create dynamic and interactive user interfaces. It demonstrates my skills in
+                        front-end.</div>
                 </div>
                 
-                <div class="photo">
-                    <img src="logo2.png" alt="">
-                    <img id="me" src="photo1.webp" alt="">
                 </div>
-               
+
+                <div class="project-info">
+                    <img src="assets/img/" alt="">
+                    <div class="language_requi">
+                      <div>C</div>
+                    </div>
+                    <div class="project-detail">
+                        <div class="project_name">Library Management</div>
+                        <div class="date">March 2024</div>
+                         <div class="description">  This project showcases my skills in C programming, including file
+                            handling, data structures, and logical problem-solving.</div>
+                    </div>
+                    
+                    </div>
             </div>
-    </div>
-    <div class="separate"></div>
-    <div class="second_page">
-      <h1 class="heading bg-color">ABOUT ME</h1>
-      <div class="content2">
-        <div class="about">
-          <h2>Hi, I'm <span class="color">Animesh Prakash</span> ,Web Developer and Programmer.</h2>
-          <p>I am currently pursuing a diploma in Computer Science at Guru Nanak Dev College, where I am building a strong foundation in both theoretical and practical aspects of technology. </p>
-          <p>My expertise includes HTML, CSS, JavaScript, C, C++, and Data Structures and Algorithms (DSA). I am passionate about web development and programming, always striving to create efficient, scalable, and user-friendly solutions. </p>
-          <p> I enjoy problem-solving and continuously learning new technologies to enhance my skill set. I look forward to applying my knowledge to real-world projects and growing as a developer in this ever-evolving field.</p>
-           <p>____________________________________________________________________________________________________</p>
-           <div class="grid">
-            <div class="grid_data">Name: <span class="color">Animesh Prakash</span></div>
-            <div class="grid_data">Age: <span class="color">17</span></div>
-            <div class="grid_data">Email: <span class="color">animeshp1607@gmail.com</span></div>
-            <div class="grid_data">From: <span class="color">New Delhi,delhi</span></div>
+         
+
+        </div>
+        <div class="separate"><img src="assets/svg/curve.svg" alt=""></div>
+        <div class="page6" id="contacts">
+            <div class="heading  heading2 hov" id="h6">Contact Me</div>
+            <div class="information">
+                <p>I’m always open to discussing new projects, creative ideas, or opportunities to collaborate.
+                    If you have any questions or just want to connect, don’t hesitate to reach out. Let’s build
+                    something amazing together!</p>
+                <p>
+                    Feel free to get in touch if you’re looking for a passionate developer to bring your ideas to life!
+                </p>
+                <p>
+                    Email: <span>animeshp1607@gmail.com</span>
+                </p>
+                <form name="contact" netlify>
+                    <p>
+                      <label>Name: <input class="input" type="text" placeholder="Name here..." name="name" /></label>
+                    </p>
+                    <p>
+                      <label class="gap">Email: <input class="input" type="email" placeholder="Email here..." name="email" /></label>
+                    </p>
+                    <p>
+                        <label>Message: <textarea  name="Message" id="Message" placeholder="Message here..."></textarea></label>
+                    </p>
+                    <p>
+                      <button class="btn" type="submit">Send</button>
+                    </p>
+                  </form>
+            </div>
+           <div class="communication">
+            <div class="icon"><img src="assets/img/logo.png" alt=""></div>
+            <div class="communicate">© 2024 <span>Animesh Prakash</span> Portfolio.All Rights Reserved.</div>
            </div>
         </div>
-        <div class="photo2"></div>
-      </div>
-     
     </div>
-    <div class="separate"></div>
-    <div class="page3" id="third_p">
-          <div class="heading  heading2 hov" id="h2" >Skills</div>
-         <div class="skills">
-            <div class="skill shadow" style="background-color: #00ff97; color: black;">
-                 <img class="image1" src="development-1.png" alt="">
-                <p>Frontend Developer</p>
-                <img class="image2" src="frontend.png" alt="">
-            </div>
-            <div class="skill shadow">
-                <img class="image1" src="pro.png" alt="">
-                <p>Programmer</p>
-              <img  class="image2" src="programmer.jpg" alt="">
-            </div>
-            <div class="skill shadow"></div>
-            <div class="skill shadow"></div>
-           
-         </div>
-    </div>
-    <div class="separate"></div>
-     <div class="page4">
-       <div class="heading" id="h4">Here are Numerous Topics That
-        Will Enhance My Skills</div>
-        <div class="lan" id="lan1">
-            <div class="language hov">HTML</div>
-            <div class="language hov">CSS</div>
-            <div class="language hov">JavaScript</div>
-        </div>
-        <div class="lan">
-            <div class="language hov">C</div>
-            <div class="language hov">C++</div>
-        </div>
-     </div>
-     <div class="separate"></div>
-     <div class="page5">
-        <div class="heading  heading2 hov" id="h5" >Projects</div>
-        <div class="projects">
-            <div class="rotate_img">
-                <div class="image">
-                    <img id="img1" src="netflix.svg" alt="">
-                  </div>
-            </div>
-         
-          <div class="projects_info">
-            <h2>Netflix Clone</h2>
-            <p>I created a Netflix clone using HTML and CSS, replicating the design and layout 
-                of the popular streaming platform. This project demonstrates my ability to build
-                 visually appealing and responsive web interfaces, closely mimicking the look and 
-                 feel of Netflix. It showcases my skills in front-end development, with a focus on 
-                 layout design and user experience.</p>
-          </div>
-         
-        </div>
-        <div class="projects">
-            <div class="rotate_img">
-            <div class="image">
-                <img src="spotify.svg" alt="">
-            </div>
-            </div>
-            <div class="projects_info">
-                <h2>Spotify Clone</h2>
-                <p>
-                    I developed a Spotify clone using HTML, CSS, and JavaScript, replicating the core
-                     design and functionality of the music streaming platform. This project highlights
-                      my ability to create dynamic and interactive user interfaces. It demonstrates my skills in front-end 
-                      development and working with JavaScript to handle audio playback and interface controls.
-                </p>
-            </div>
-           
-        </div>
-        <div class="projects">
-            <div class="rotate_img" id="library">
-            <div class="image">
-                <img src="book.svg" alt="">
-            </div>
-            </div>
-            <div class="projects_info">
-                <h2>Library Management</h2>
-                <p>
-                    I developed a library management system using C, designed to manage
-                     book inventories, user records, and borrowing details efficiently.
-                      This project showcases my skills in C programming, including file 
-                      handling, data structures, and logical problem-solving. The system
-                       allows for adding, deleting, and searching for books, as well as
-                        managing user data in an organized manner.
-                </p>
-            </div>
-        </div>
-        
-     </div>
-     <div class="separate"></div>
-     <div class="page6">
-        <div class="heading  heading2 hov" id="h6" >Contact Me</div>
-        <div class="information">
-            <p>I’m always open to discussing new projects, creative ideas, or opportunities to collaborate. 
-                If you have any questions or just want to connect, don’t hesitate to reach out. Let’s build
-                 something amazing together!</p>
-            <p>
-                Feel free to get in touch if you’re looking for a passionate developer to bring your ideas to life!
-            </p>
-            <p>
-                Email:  <span>animeshp1607@gmail.com</span>
-            </p>    
-             <div>Name:</div>
-            <input class="input" type="text">
-            <div class="gap">Email:</div>
-            <input class="input" type="text">
-            <div class="gap">Message:</div>
-            <textarea class="input" name="" id="input2"></textarea>
-            <div class="send" id="message" >Send Message</div>
-        </div>
-        
-     </div>
-   </div>
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

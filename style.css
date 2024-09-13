@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     background-color: rgb(21, 21, 21);
 }
 * {
-
-   font-family: "Inter", Sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
   
 }
+html{
+    scroll-behavior: smooth;
+}
 .first_page{
-    height: 110vh;
+    height: 90vh;
     display: flex;
     position: relative;
 }
@@ -35,6 +39,7 @@ nav{
     height: 10%;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 .elements li a {
     text-decoration: none;
@@ -53,19 +58,28 @@ nav{
   
     transition: width 0.3s;
 }
-
-#contact{
-  padding: 12px 30px 12px 30px;
-   color: black;
-   border-radius: 10px;
+.line{
+    height: 100px;
+    width: 2px;
+    background-color: #00ff97;
 }
-#contact a{
-    color: black;
+.software{
+    position: fixed;
+    right: 30px;
+   top: 30vh;
 }
 .name{
     font-size: 3rem;
     font-weight: 700;
 
+}
+.name div{
+    color: white;
+}
+#aboutme{
+    text-decoration: none;
+    font-weight: 700;
+    text-decoration: underline;
 }
 .name span:first-of-type{
     color: white;
@@ -96,10 +110,11 @@ nav{
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
      height: 50vh;
 }
 .intro{
-    width: 50vw;
+    width: 60vw;
 }
 .app a img{
     width: 40px;
@@ -107,14 +122,15 @@ nav{
 .intro_app {
    display: flex;
    align-items: center;
-   justify-content: flex-start;
+   justify-content: flex-end;
+   flex-direction: column;
     list-style: none;
-    gap: 10px;
+    gap: 5px;
     padding-left: 0;
     
 }
 .details{
-   margin-top: 40px;
+   margin-top: 80px;
     color: white;
     font-size: 20px;
 }
@@ -125,32 +141,34 @@ nav{
    align-items: center;
 }
 
-.separate{
-    width: 100%;
-    height: 5px;
-    background-color: aliceblue;
+.separate img{
+    width: 97.8vw;
+    height: 10vh;
+}
+#margin{
+    height: 9vh;
 }
 .second_page{
     height: 90vh;
     padding: 0 20px;
+    background-color: black;
 }
 .heading{
-    color: black;
+    color: white;
     text-align: center;
     font-size: 3rem;
     font-weight: 800;
     text-decoration: underline;
+    margin-top: -10px;
 }
-.about h2{
-    font-size: 2rem;
-    color: white;
-}
-.about p{
+
+.about div{
     color: white;
     font-size: 1rem;
 }
 .content2{
     display: flex;
+    flex-direction: column;
 }
 .photo2{
     width: 40vw;
@@ -166,9 +184,12 @@ nav{
 }
 .page3{
     height: 180vh;
-    padding: 10px 20px;
+    width: 100%;
+    margin: -10px;
+    padding: 0px 10px;
     display: grid;
     justify-content: center;
+    background-color: rgb(21, 21, 21);
 }
 .heading2{
     width: 250px;
@@ -212,9 +233,7 @@ nav{
     right: 14px;
 
 }
-#third_p{
-    background-color: black;
-}
+
 .image1{
     position: absolute;
     top: 40px;
@@ -223,7 +242,8 @@ nav{
 .page4{
     height: 80vh;
     padding: 20px;
-
+    background-color: rgb(21, 21, 21);
+    margin-top: -10px;
 }
 .lan{
     margin: auto;
@@ -243,6 +263,7 @@ nav{
     margin: auto;
     text-decoration: none;
     font-size: 2.5rem;
+    margin-top: -10px;
 }
 .language{
     color: black;
@@ -250,8 +271,8 @@ nav{
     font-size: 2rem;
     font-weight: 700;
     text-decoration: underline;
-    width: 200px;
-    height: 55px;
+    width: 22vw;
+    height: 60px;
     border-radius: 50px;
     border-style: solid;
     border-width: 0px 0px 6px 0px;
@@ -260,14 +281,21 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+}
+.language img{
+    width: 60px;
 }
 .page5{
-    height: 220vh;
+    height: 140vh;
+    background-color: black;
+    margin-top: -38px;
 }
 #h5{
     margin: auto;
-    margin-top: 20px;
+    margin-top: 32px;
     margin-bottom: 40px;
+    color: black;
 }
 .projects{
     margin: auto;
@@ -326,12 +354,91 @@ nav{
     color: white;
 }
 .page6{
-    height: 160vh;
+    height: 180vh;
+    margin-top: -38px;
 }
 #h6{
     width: 350px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 40px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+.project-info img{
+    width: 300px;
+    height: 180px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #00FF97
+}
+.description{
+    color: white;
+    font-size: 15px;
+   
+}
+.project-info{
+    height: 500px;
+    width: 300px;
+    border: 1px solid #00ff97;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+}
+.arrow img{
+    width: 100%;
+    height: 50px;
+}
+.Projects{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.language_requi{
+   display: grid;
+   grid-template-columns: auto auto auto;
+      width: 90%;   
+   gap: 10px;
+}
+.project_name{
+    color: #00ff97;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 30px;
+}
+.date{
+    color: #444447;
+    font-size: 15px; 
+}
+
+.language_requi div{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+       background-color: #00FF97;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 30px;
+}
+.project-detail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 100%;
+    margin-top: 0px;
+    row-gap: 3px;
 
 }
 .information{
@@ -356,10 +463,11 @@ nav{
 .input{
     width: 50vw;
     height: 40px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     border-radius: 10px;
     margin-top: 10px;
-   
+    display: block;
+    padding: 5px;
 }
 .gap{
     margin-top: 30px;
@@ -380,16 +488,20 @@ nav{
     background-color: #00ff97;
     
 }
-#message{
-    color: black;
-    font-weight: 800;
-    padding: 0 5px;
+#Message{
+    display: block;
+     width: 50vw;
+     height: 20vh;
+     border-radius: 10px;
+     font-size: 1.1rem;
+     padding: 10px;
 }
 .hov:hover{
     background-color: #00ff97;
     border-color: white;
     transition: 0.5s ease;
 }
+
 .shadow:hover{
     transition: 0.3s ease-in-out;
     box-shadow: 10px 10px 12px #00ff97 ;
@@ -398,8 +510,10 @@ nav{
 #me{
     width: 450px;
     margin: 30px;
-    border-radius: 10px 40px;
-    border: none;
+    border-radius: 30%;
+    border: 1px solid #00ff97;
+    box-shadow: 5px 10px 10px #00FF97 ;
+    
 }
 #message:hover{
     background-color: white;
@@ -409,8 +523,52 @@ nav{
 .image img{
     width: 120px;
 }
+.communication{
+    width: 98.5vw;
+    height: 30vh;
+    background-color: black;
+    margin-left: -7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.click{
+    color: rgb(126, 121, 121);
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    gap: 8px;
+}
+.click img{
+    width: 30px;
+}
+.btn{
+   width: 100px;
+   font-size: 1.1rem;
+    padding: 8px;
+    border-radius: 10px;
+}
 #img1{
     width: 180px;
+}
+.icon img{
+    width: 120px;
+    border-radius: 50%;
+}
+.communicate{
+    color: white;
+    font-size: 20px;
+}
+.about div{
+    margin: 10px;
+}
+.communicate span{
+    color: #00FF97;
+    font-weight: 600;
 }
 @keyframes rotate {
     0% {
@@ -436,5 +594,171 @@ nav{
   
     100% {
         transform: rotate(0deg); /* Back to original position */
+    }
+}
+.elements span{
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    height: 50px;
+    width: 120px;
+    background-color: #00ff97;
+    z-index: -1;
+    border-radius: 10px;
+}
+/* For the first li element */
+/* .nav-elements ul.elements li:nth-child(1):hover ~ span {
+    left: 45px;
+    
+}
+
+/* For the second li element */
+/* .nav-elements ul.elements li:nth-child(2):hover ~ span {
+    left: 31vh;
+} */
+
+/* For the third li element */
+/* .nav-elements ul.elements li:nth-child(3):hover ~ span {
+    left: 56vh;
+} */
+
+/* For the fourth li element */
+/* .nav-elements ul.elements li:nth-child(4):hover ~ span {
+    left: 78vh;
+} */
+
+/* For the fifth li element */
+/* .nav-elements ul.elements li:nth-child(5):hover ~ span {
+    left: 98vh;
+} */ */
+
+.nav-elements ul.elements span {
+    position: absolute;
+    transition: left 0.3s ease; /* Smooth movement */
+}
+.ham img{
+    width: 50px;
+}
+.ham{
+    position: absolute;
+    left: 15px;
+    display: none;
+}
+#color{
+    color: black;
+}
+.elements span{
+    transition: 0.3s ease-in-out;
+}
+.left{
+   height: 100vh;
+   width: 50vw;
+    background-color: black;
+    z-index: 1;
+
+}
+/* .nav-elements ul.elements li a:hover{
+   color: black;
+} */
+ @media screen and (max-width:1200px){
+    .content{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+    }
+    .first_page{
+        height: 60vh;
+    }
+    .name{
+        width: max-content;
+    }
+   .photo{
+    margin: auto;
+   }
+   .software{
+    top: 25vh;
+   }
+   .elements span {
+    left: 35px;
+    width: 96px;
+   }
+   .second_page{
+    height: 40vh;
+   }
+   .page4{
+    height: 30vh;
+   }
+   
+   .page5{
+    height: 100vh;
+   }
+   .Projects{
+    display: grid;
+    grid-template-columns: auto auto;
+
+   }
+   .project-info{
+    margin: 15px;
+   }
+   .page6{
+    height: 130vh;
+   }
+   .communication{
+    height: 20vh;
+   }
+   .language{
+    width: max-content;
+padding: 0px 25px;
+}
+}
+
+@media screen and (max-width:900px){
+    .name{
+        font-size: 2.5rem;
+    }
+    .talent{
+        font-size: 2.5rem;
+    }
+    #element2{
+        font-size: 2.5rem;
+    }
+    .separate img{
+        width: 97.5vw;
+      margin-top: -3px;
+      height: 7vh;
+    }
+   .second_page{
+    height: 50vh;
+   }
+   .separate{
+    margin: 3px;
+   }
+ .lan{
+    flex-wrap: wrap;
+    row-gap: 30px;
+ }
+ .page4{
+    height: 45vh;
+ }
+ #margin{
+    height: 6vh;
+ }
+ .page5{
+    height: 120vh;
+ }
+ .communication{
+    height: 15vh;
+ }
+}
+@media screen and (max-width:800px){
+    .nav-elements{
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        right: 20px;
+    }
+    .ham{
+        display: flex;
     }
 }
