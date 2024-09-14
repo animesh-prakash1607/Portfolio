@@ -55,7 +55,6 @@ nav{
     left: 0;
     width: 0;
     height: 3px;
-  
     transition: width 0.3s;
 }
 .line{
@@ -379,6 +378,52 @@ nav{
     border-radius: 10px;
     border-color: #00FF97
 }
+.imgg{
+    position: relative;
+}
+.live{
+    width: 70px;
+    height: 40px;
+    background-color: #00ff97;
+    position: absolute;
+    top: 40%;
+   left: 40px;
+   display: none;
+   border-radius: 10px;
+}
+.git{
+    width: 80px;
+    height: 40px;
+    background-color: #00ff97;
+    position: absolute;
+    top: 40%;
+   right: 40px;
+  display: none;
+   border-radius: 10px;
+}
+.imgg .live a{
+    text-decoration: none;
+}
+.imgg .git a{
+    text-decoration: none;
+}
+.imgg:hover{
+    img{
+        opacity: 0.5;
+    }
+    .live{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 6;
+    }
+    .git{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+}
 .description{
     color: white;
     font-size: 15px;
@@ -512,9 +557,10 @@ nav{
     
 }
 #me{
-    width: 450px;
+    width: 300px;
+    height: 350px;
     margin: 30px;
-    border-radius: 30%;
+    border-radius: 40px;
     border: 1px solid #00ff97;
     box-shadow: 5px 10px 10px #00FF97 ;
     
@@ -600,6 +646,9 @@ nav{
         transform: rotate(0deg); /* Back to original position */
     }
 }
+#black{
+    color: white;
+}
 .elements span{
     position: absolute;
     top: 10px;
@@ -611,30 +660,31 @@ nav{
     border-radius: 10px;
 }
 /* For the first li element */
-/* .nav-elements ul.elements li:nth-child(1):hover ~ span {
-    left: 45px;
+ .nav-elements ul.elements li:nth-child(1):hover ~ span {
+
     
 }
 
 /* For the second li element */
-/* .nav-elements ul.elements li:nth-child(2):hover ~ span {
-    left: 31vh;
-} */
+.elements li:hover{
+ 
 
-/* For the third li element */
-/* .nav-elements ul.elements li:nth-child(3):hover ~ span {
-    left: 56vh;
-} */
+   transition: all 0.5s;
+}
+#size{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.elements li a:hover{
+    transition: width 0.3s;
 
-/* For the fourth li element */
-/* .nav-elements ul.elements li:nth-child(4):hover ~ span {
-    left: 78vh;
-} */
-
-/* For the fifth li element */
-/* .nav-elements ul.elements li:nth-child(5):hover ~ span {
-    left: 98vh;
-} */ */
+   animation-name: root;
+}
+:root{
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
 
 .nav-elements ul.elements span {
     position: absolute;
@@ -654,13 +704,53 @@ nav{
 .elements span{
     transition: 0.3s ease-in-out;
 }
+.project-info img:hover{
+    
+}
 .left{
-   height: 100%;
-   width: 300px;
+   height: 120%;
+   width: 100%;
     background-color: black;
     z-index: 1;
-    position: relative;
-    left: -100%;
+    position: fixed;
+    left: 0;
+    transition: 0.5s ease-in-out;
+    display: none;
+}
+.banner{
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    background-color: #0a1019;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    height: 45px;
+    align-items: center;
+}
+.banner img{
+    width: 55px;   
+}
+.left ul{
+    margin: auto;
+    width: max-content;
+    margin-top: 25vh;
+    list-style: none;
+    text-align: center;
+}
+.left ul li a{
+    font-size: 3rem;
+    color: white;
+    text-decoration: underline;
+}
+#ban{
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+}
+#close{
+    position: absolute;
+    right: 15px;
 }
 /* .nav-elements ul.elements li a:hover{
    color: black;
@@ -718,6 +808,12 @@ padding: 0px 25px;
 }
 
 @media screen and (max-width:900px){
+    .content{
+        width: 80vw;
+    }
+    .intro{
+        height: inherit;
+    }
     .name{
         font-size: 2.5rem;
     }
@@ -784,7 +880,9 @@ padding: 0px 25px;
     height: auto;
      padding: 20px;
    }
-  
+  .communication{
+   
+  }
 }
 @media screen and (min-height :1100px) and (max-width:1200px){
     .first_page{
@@ -815,6 +913,9 @@ padding: 0px 25px;
     #margin{
         height: 8vh;
     }
+    .logo img{
+        margin: 5px;
+    }
     #h5{
         display: flex;
         align-items: center;
@@ -839,7 +940,8 @@ padding: 0px 25px;
         width: 60px;
     }
     .communication{
-        justify-content: space-between;
+        flex-direction: column;
+     justify-content: center;
     }
     .communicate{
         font-size: 15px;
