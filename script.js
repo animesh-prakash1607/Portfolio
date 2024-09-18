@@ -86,22 +86,18 @@ function hamburger() {
   });
 
   // Add event listeners to the list items to hide the sidebar on click
-  let scroll2 = document.querySelectorAll(".elements2 li a");
+  let scroll2 = document.querySelectorAll(".nav-remove");
   scroll2.forEach(link => {
     link.addEventListener('click', function(event) {
       event.preventDefault();
+      document.querySelector(".nav").style.display = "flex";
+      document.querySelector(".left").style.left = "-100%";
       let pages = document.querySelector(this.getAttribute('href'));
       pages.scrollIntoView({
         behavior: 'smooth'  // Scroll to the corresponding section
       });
     });
   });
-  scroll2.forEach(link=>{
-    link.addEventListener('click',function(event){
-      document.querySelector(".nav").style.display = "flex";
-      document.querySelector(".left").style.left = "-100%";
-    })
-  })
 }
 
 nav();
