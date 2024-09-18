@@ -602,6 +602,7 @@ nav{
    font-size: 1.1rem;
     padding: 8px;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 #img1{
     width: 180px;
@@ -729,8 +730,31 @@ nav{
     height: 45px;
     align-items: center;
 }
+.adjust{
+    width: 100%;
+}
 .banner img{
     width: 55px;   
+}
+#name{
+    width: 55vw;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+#email{
+    width: 55vw;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+#message{
+    width: 55vw;
+    height: 30vh;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+
 }
 .left ul{
     margin: auto;
@@ -891,6 +915,7 @@ padding: 0px 25px;
         align-items: center;
   }
 }
+
 @media screen and (min-height :1100px) and (max-width:1200px){
     .first_page{
         height: 85vh;
@@ -908,6 +933,9 @@ padding: 0px 25px;
   
 }
 @media screen and (max-width:600px){
+    .adjust{
+        width: 85%;
+       }
    .content{
     height: 25vh;
     margin: auto;
@@ -925,7 +953,17 @@ padding: 0px 25px;
   .page5{
     width: 100%;
   }
-
+   #name{
+    display: block;
+    width: 80vw;
+   }
+   #email{
+    display: block;
+    width: 80vw;
+   }
+   #message{
+    width: 80vw;
+   }
     .second_page{
         height: 90vh;
         width: 100%;
@@ -975,6 +1013,7 @@ padding: 0px 25px;
    .photo{
     margin-top: 60px;
    }
+   
 }
 @media screen and (max-width:550px){
     #me{
@@ -1020,5 +1059,5 @@ padding: 0px 25px;
    .page4{
     height: 140vh;
    }
-   
+  
 }
