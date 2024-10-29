@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         startDelay: 400,
         loop: true,
       });
-    document.querySelector(".elements li a").style.color="#00ff97"
+    document.querySelector(".elements li a").style.color="#ec4899"
 });
 function nav(){
   let nav_lists=document.querySelectorAll(".elements li");
@@ -25,7 +25,7 @@ function nav(){
      list.forEach((li)=>{
       li.style.color="white"
      })
-      list[0].style.color="#00ff97";
+      list[0].style.color="#ec4899";
       
     })
     nav_lists[1].addEventListener("click",()=>{
@@ -33,7 +33,7 @@ function nav(){
        list.forEach((li)=>{
         li.style.color="white"
        })
-        list[1].style.color="#00ff97";
+        list[1].style.color="#ec4899";
     
     })
     nav_lists[2].addEventListener("click",()=>{
@@ -41,21 +41,21 @@ function nav(){
        list.forEach((li)=>{
         li.style.color="white"
        })
-     list[2].style.color="#00ff97";
+     list[2].style.color="#ec4899";
     })
     nav_lists[3].addEventListener("click",()=>{
        let list=document.querySelectorAll(".elements li a");
        list.forEach((li)=>{
         li.style.color="white"
        })
-     list[3].style.color="#00ff97";
+     list[3].style.color="#ec4899";
     })
     nav_lists[4].addEventListener("click",()=>{
        let list=document.querySelectorAll(".elements li a");
        list.forEach((li)=>{
         li.style.color="white"
        })
-     list[4].style.color="#00ff97";
+     list[4].style.color="#ec4899";
     })
      
     let scroll=document.querySelectorAll(".elements li a")
@@ -99,6 +99,12 @@ function hamburger() {
     });
   });
 }
+document.getElementById('download_btn').addEventListener('click', function() {
+  const link = document.createElement('a');
+  link.href = 'assets/resume.pdf';  // Relative path to the resume file
+  link.download = 'Animesh Prakash';  // Suggested name for the downloaded file
+  link.click();
+});
 
 nav();
 hamburger();
