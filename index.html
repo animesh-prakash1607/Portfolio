@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
     <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -52,28 +53,31 @@
           
             <div class="content">
                 <div class="intro">
-                    <div class="name">
+                    <div class="name" data-aos="fade-right">
                         <div>Hi, My name is </div>
                         <span style="color: #00ff97;">Animesh Prakash</span>
                     </div>
-                    <div>
+                    <div data-aos="fade-left">
                         <span class="talent">I am a </span>
                         <span id="element2" class="color"></span>
                         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
                     </div>
-                    <div class="software">
-                        <ul class="intro_app">
-                            <li class="app"><a href="https://www.linkedin.com/feed/"><img src="assets/svg/linkedin.svg"
-                                        alt=""></a></li>
-                            <li class="app"><a href="https://leetcode.com/"> <img src="assets/svg/leetcode.svg" alt=""></a>
-                            </li>
-                            <li class="app"><a href="https://github.com/"><img src="assets/svg/github.svg" alt=""></a></li>
-                           
-                        </ul>
+                    <div data-aos="zoom-in-down">
+                        <div class="software" >
+                            <ul class="intro_app">
+                                <li class="app"><a href="https://www.linkedin.com/feed/"><img src="assets/svg/linkedin.svg"
+                                            alt=""></a></li>
+                                <li class="app"><a href="https://leetcode.com/u/Animesh_Prakash07/"> <img src="assets/svg/leetcode.svg" alt=""></a>
+                                </li>
+                                <li class="app"><a href="https://github.com/"><img src="assets/svg/github.svg" alt=""></a></li>
+                               
+                            </ul>
+                        </div>
+                         <div style="cursor: pointer; width: fit-content;"  >
+                            <button id="download_btn" class="resume" >Resume <img width="20px" src="assets/svg/download.svg" alt=""></button>
+                         </div>
                     </div>
-                     <div style="cursor: pointer; width: fit-content;" >
-                        <button id="download_btn" class="resume" >Resume <img width="20px" src="assets/svg/download.svg" alt=""></button>
-                     </div>
+                    
                     
                   <!-- <div> <img src="assets/img/Arrow-2.png" width="550px" style="margin-top: 30px;" alt=""></div>  -->
                 </div>
@@ -89,9 +93,9 @@
         <!-- <div class="separate"><img src="assets/svg/curve2.svg" alt=""></div> -->
         <div class="second_page" id="about">
             <div>
-                <h1 class="heading " id="aboutme">About Me </h1>
+                <h1 class="heading " id="aboutme" data-aos="zoom-in-up">About Me </h1>
                 <div class="content2">
-                    <div class="about">
+                    <div class="about" data-aos="fade-right">
                         <!-- <div id="size">Hi, I'm <span class="color">Animesh Prakash</span> ,Web Developer and Programmer.</div> -->
                         <!-- <p>I am currently pursuing a diploma in Computer Science at Guru Nanak Dev College, where I am
                             building a strong foundation in both theoretical and practical aspects of technology. </p>
@@ -116,7 +120,7 @@
                             <div class="grid_data">From: <span class="color">New Delhi,delhi</span></div>
                         </div>
                     </div>
-                     <div class="me-photo">
+                     <div class="me-photo" data-aos="fade-left">
                         <!-- <img src="assets/img/photo2.jpg" width="300px" height="400px" alt=""> -->
                      </div>  
                     
@@ -149,19 +153,20 @@
             
             <img class="column2" src="assets/svg/column.svg" alt="">
             <div class="content4">
-                <div class="h6" id="h44"> Skills</div>
+                <div class="h6" id="h44" data-aos="zoom-in-up"> Skills</div>
                 <div class="container">
-                  <div class="skill-contain" ><div class="line1"></div><div class="real-skill"><img src="assets/svg/html.svg" alt="" width="55px">HTML</div></div>
-                  <div class="skill-contain"><div class="line1"></div><div class="real-skill"><img src="assets/svg/css.svg" alt="" width="55px">CSS</div></div>
-                  <div class="skill-contain"><div class="line1"></div><div class="real-skill"><img src="assets/svg/js.svg" alt="" width="55px">JavaScript</div></div>
-                  <div class="skill-contain"><div class="line1"></div><div class="real-skill"><img src="assets/svg/react.svg" alt="" width="55px">React</div></div>
-                  <div class="skill-contain"><div class="line1"></div><div class="real-skill"><img src="assets/svg/express.svg" alt="" width="55px">Express JS</div></div>
-                  <div class="skill-contain"><div class="line1"></div><div class="real-skill"><img src="assets/svg/mongo.svg" alt="" width="55px">MongoDB</div></div>
-                  <div class="skill-contain"><div class="line1"></div><div class="real-skill"><img src="assets/svg/node.svg" alt="" width="70px">NodeJS</div></div>
-                  <div class="skill-contain"><div class="line1"></div><div class="real-skill"><img src="assets/svg/tailwind.svg" alt="" width="55px">Tailwind CSS</div></div>
-                  <div class="skill-contain"><div class="line1"></div><div class="real-skill"><img src="assets/svg/git.svg" alt="" width="55px">Git</div></div>
-                  <div class="skill-contain"><div class="line1"></div><div class="real-skill"><img src="assets/svg/c.svg" alt="" width="55px">C</div></div>
-                  <div class="skill-contain"><div class="line1"></div><div class="real-skill"><img src="assets/svg/cpp.svg" alt="" width="55px">C++</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/html.svg" alt="" width="55px">HTML</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/css.svg" alt="" width="55px">CSS</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/js.svg" alt="" width="55px">JavaScript</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/react.svg" alt="" width="55px">React</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/express.svg" alt="" width="55px">Express JS</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/mongo.svg" alt="" width="55px">MongoDB</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/node.svg" alt="" width="70px">NodeJS</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/tailwind.svg" alt="" width="55px">Tailwind CSS</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/git.svg" alt="" width="55px">Git</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/github.svg" alt="" width="55px">Github</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/c.svg" alt="" width="55px">C</div></div>
+                  <div class="skill-contain" data-aos="flip-up"><div class="line1"></div><div class="real-skill"><img src="assets/svg/cpp.svg" alt="" width="55px">C++</div></div>
                 </div>
             </div>
            
@@ -177,9 +182,9 @@
             </div> -->
         </div>
         <div class="page5" id="projects">
-          <div class="h6" >Projects</div>
+          <div class="h6" data-aos="zoom-in-up">Projects</div>
             <div class="Projects">
-               <div>
+               <div data-aos="zoom-in-down">
                 <div class="project-line"></div>
                 <div class="project-info">
                     <div class="imgg">
@@ -202,7 +207,7 @@
                 </div>
                </div>
          
-   <div>
+   <div data-aos="zoom-in-down">
     <div class="project-line"></div>
     <div class="project-info">
         <div class="imgg">
@@ -227,7 +232,7 @@
         </div>
    </div>
         
-     <div>
+     <div data-aos="zoom-in-down">
         <div class="project-line"></div>
         <div class="project-info">
             <div class="imgg">
@@ -254,51 +259,55 @@
          
 
         </div>
-        <div class="line-sep"></div>
+        <div class="line-sep" data-aos="zoom-in"></div>
         <div class="page6" id="contacts">
-            <div class="h6" >Contact Me</div>
+            <div class="h6" data-aos="zoom-in-up">Contact Me</div>
             <div class="information">
-                <p>I’m always open to discussing new projects, creative ideas, or opportunities to collaborate.
+                <p data-aos="fade-right">I’m always open to discussing new projects, creative ideas, or opportunities to collaborate.
                     If you have any questions or just want to connect, don’t hesitate to reach out. Let’s build
                     something amazing together!</p>
-                <p>
+                <p data-aos="fade-left">
                     Feel free to get in touch if you’re looking for a passionate developer to bring your ideas to life!
                 </p>
-                <p>
+                <p data-aos="fade-right">
                     Email: <span>animeshp1607@gmail.com</span>
                 </p>
                 
                     <form name="Contact-Form" method="POST" data-netlify="true" class="adjust" >
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-left">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" placeholder="Enter your name" required>
                         </div>
     
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-right">
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" placeholder="Enter your Email" required>
                         </div>
     
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-left">
                             <label for="message">Message:</label>
                             <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
                         </div>
     
-                        <button type="submit" class="btn">Send</button>
+                        <button type="submit" class="btn" data-aos="fade-left">Send</button>
                     </form>
             </div>
             
            <div class="footer">
-            <div class="line-sep"></div>
+            <div class="line-sep" data-aos="zoom-in"></div>
             <div class="communication ">
-                <div class="icon"><img src="assets/img/logo.png" alt=""></div>
-            <div class="communicate">© 2024 <span>Animesh Prakash</span> Portfolio.All Rights Reserved.</div>
+                <div class="icon" ><img src="assets/img/logo.png" alt=""></div>
+            <div class="communicate" >© 2024 <span>Animesh Prakash</span> Portfolio.All Rights Reserved.</div>
             </div>
             
            </div>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
