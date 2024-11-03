@@ -1082,8 +1082,11 @@ nav{
     }
     .second_page{
         height: 80vh;
-        width: 90%;
+        width: 87%;
         padding: 0px 25px;
+    }
+    .communication{
+        gap: 70px;
     }
 }
 @media screen and (max-width:1000px) and (min-width:500px){
