@@ -719,7 +719,7 @@ nav{
     bottom: 0;
 }
 .communication{
-    width: 98.5vw;
+    width: 98vw;
     height: 20vh;
     display: flex;
     
@@ -1034,6 +1034,7 @@ nav{
     height: 165vh;
     }
     .communication{
+        display: none;
         gap: 90px;
         width: 100%;
     }
