@@ -479,7 +479,6 @@ nav{
 }
 .page6{
     height: 180vh;
-    margin-top: -38px;
     position: relative;
 }
 .h6{
@@ -1030,9 +1029,9 @@ nav{
         gap: 40px;
     }
     .page6{
+        display: none;
     width: 100%;
     height: 165vh;
-    display: none;
     }
     .communication{
         gap: 90px;
@@ -1060,14 +1059,8 @@ nav{
     }
     .page5{
         height: 230vh;
-        padding-left: 70px;
     }
-    .page6{
-        padding-left: 20px;
-    }
-    .first_page{
-        
-    }
+    
     .name{
         font-size: 2.4rem;
     }
@@ -1078,7 +1071,10 @@ nav{
         font-size: 1.8rem;
     }
     .page6{
-        padding-left: 45px;
+        height: 175vh;
+    }
+    .second_page{
+        height: 80vh;
     }
 }
 @media screen and (max-width:1000px) and (min-width:500px){
