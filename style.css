@@ -1017,6 +1017,10 @@ nav{
     .first_page{
         height: 100vh;
    padding-left: 0px;
+
+    }
+    .column{
+       height: 26vh;
     }
     .second_page{
         width: 70%;
@@ -1063,9 +1067,7 @@ nav{
    .column2{
     height: 50vh;
    }
-   .column{
-    height: 40vh;
-   }
+   
    .information p span {
   
     font-size: 17px;
