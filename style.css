@@ -353,6 +353,9 @@ nav{
     z-index: -10;
 
 }
+.column3{
+    display: none;
+}
 .content4{
     position: absolute;
     top: 10%;
@@ -1048,6 +1051,17 @@ nav{
         z-index: 0;
         position: absolute;
     }
+    .column3{
+        display: block;
+        width: 100%;
+        position: absolute;
+    }
+    .col33{
+        top: 125px;
+    }
+    .skill{
+        position: relative;
+    }
     .content{
         width: 85%;
     }
@@ -1158,6 +1172,9 @@ nav{
     }
     .page6{
         height: 170vh;
+    }
+    .col33{
+        top: 115px;
     }
     .second_page{
         height: 80vh;
