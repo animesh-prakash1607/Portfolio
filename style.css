@@ -1144,7 +1144,12 @@ nav{
    .column2{
     height: 50vh;
    }
-   
+   .column{
+    display: none;
+   }
+   #col2{
+    display: none;
+   }
    .information p span {
   
     font-size: 17px;
