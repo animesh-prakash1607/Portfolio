@@ -143,6 +143,9 @@ nav{
     font-size: 3rem;
     font-weight: 700;
 }
+.profile1 img{
+    border-radius: 30px;
+}
 #element2{
     font-size: 3rem;
     color: #ec4899 !important;
@@ -186,14 +189,13 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-     height: 60vh;
+     height: 90vh;
      z-index: 10;
 
 }
-.intro{
-    
-   
-}
+ .me-photo img{
+    border-radius: 30px;
+ }
 .app a img{
     width: 40px;
 }
@@ -240,15 +242,21 @@ nav{
     margin-top: -10px;
 }
 .about{
-    width: 60%;
+    width: 70%;
+}
+#profile{
+    display: none;
 }
 .about div{
     color: white;
     font-size: 1rem;
 }
 .content2{
+    width: 100%;
+    margin: auto;
     display: flex;
-    
+    align-items: center;
+    justify-content: space-between;
 }
 .photo2{
     width: 40vw;
@@ -1045,6 +1053,9 @@ nav{
     .blur{
         display: none;
     }
+    #profile{
+        display: block;
+    }
     .blur2{
         display: block;
         width: 100%;
@@ -1064,6 +1075,10 @@ nav{
     }
     .content{
         width: 85%;
+        flex-direction: column;
+        gap: 10%;
+        justify-content: start;
+        align-items: center;
     }
     .talent{
         font-size: 1.8rem;
@@ -1092,7 +1107,7 @@ nav{
         display: none;
     }
     .first_page{
-        height: 100vh;
+        height: 110vh;
    padding-left: 0px;
 
     }
@@ -1100,12 +1115,14 @@ nav{
        height: 26vh;
     }
     .second_page{
-        width: 70%;
+        width: 85%;
         height: 75vh;
-        padding: 0px 40px;
+        padding: 0px 25px;
+        margin: auto;
     }
     .content2{
         flex-direction: column;
+
     }
     .about{
         width: 100%;
