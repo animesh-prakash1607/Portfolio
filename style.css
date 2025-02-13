@@ -551,7 +551,7 @@ nav{
     background: linear-gradient(135deg, #ec4899, #7c3aed);
     position: absolute;
     top: 40%;
-   left: 40px;
+   right: 38%;
    display: none;
    border-radius: 10px;
    transition:  0.5s ease;
