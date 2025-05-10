@@ -804,7 +804,8 @@ nav{
   
 }
 .main{
-    width: 100%;
+    width: 98vw;
+    margin: auto;
 }
 .click{
     color: rgb(126, 121, 121);
@@ -838,6 +839,7 @@ nav{
 .communicate{
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 .about div{
     
@@ -1091,7 +1093,7 @@ nav{
         position: relative;
     }
     .content{
-        width: 85%;
+        width: 95%;
         flex-direction: column;
         gap: 10%;
         justify-content: start;
@@ -1160,7 +1162,7 @@ nav{
     }
     .page6{
     width: 100%;
-    height: 165vh;
+    height: 150vh;
     
     }
     .communication{
@@ -1175,6 +1177,7 @@ nav{
    }
    .content{
     padding-left: 15px;
+    margin-top: 30px;
    }
    .column2{
     height: 50vh;
