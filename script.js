@@ -116,3 +116,44 @@ document.getElementById('download_btn').addEventListener('click', function () {
 
 nav();
 hamburger();
+
+const container = document.getElementById("bubble-container");
+const numBubbles = 15;
+
+const bubbles = [];
+
+for (let i = 0; i < numBubbles; i++) {
+  const bubble = document.createElement("div");
+  bubble.classList.add("bubble");
+
+  const size = Math.random() * 100 + 100;
+  bubble.style.width = `${size}px`;
+  bubble.style.height = `${size}px`;
+
+  container.appendChild(bubble);
+
+  bubbles.push({
+    el: bubble,
+    x: Math.random() * window.innerWidth,
+    y: Math.random() * window.innerHeight,
+    dx: (Math.random() - 0.5) * 0.7,
+    dy: (Math.random() - 0.5) * 0.7
+  });
+}
+
+function animate() {
+  for (let bubble of bubbles) {
+    bubble.x += bubble.dx;
+    bubble.y += bubble.dy;
+
+    // Bounce off edges
+    if (bubble.x < 0 || bubble.x > window.innerWidth) bubble.dx *= -1;
+    if (bubble.y < 0 || bubble.y > window.innerHeight) bubble.dy *= -1;
+
+    bubble.el.style.transform = `translate(${bubble.x}px, ${bubble.y}px)`;
+  }
+
+  requestAnimationFrame(animate);
+}
+
+animate();
