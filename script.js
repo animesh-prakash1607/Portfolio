@@ -119,14 +119,22 @@ hamburger();
 
 const container = document.getElementById("bubble-container");
 const numBubbles = 15;
-
 const bubbles = [];
 
 for (let i = 0; i < numBubbles; i++) {
   const bubble = document.createElement("div");
   bubble.classList.add("bubble");
 
-  const size = Math.random() * 100 + 100;
+  // Determine bubble size based on screen width
+  let size;
+  if (window.innerWidth <= 768) {
+    // Mobile view: smaller bubbles
+    size = Math.random() * 20 + 20; // 30px to 60px
+  } else {
+    // Desktop view: larger bubbles
+    size = Math.random() * 100 + 100; // 100px to 200px
+  }
+
   bubble.style.width = `${size}px`;
   bubble.style.height = `${size}px`;
 
@@ -157,3 +165,4 @@ function animate() {
 }
 
 animate();
+

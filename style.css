@@ -101,9 +101,6 @@ nav{
     height: 1px;
     background: linear-gradient(200deg,transparent, #7c3aed,transparent);
 }
-.software{
-  
-}
 .name{
     font-size: 3.5rem;
     font-weight: 700;
@@ -304,9 +301,6 @@ nav{
     border-color: #00ff97;
     background-color: white;
    
-}
-#nodejs{
-    /* gap: 15px; */
 }
 .real-skill{
     width: 150px;
@@ -841,9 +835,6 @@ nav{
     font-size: 20px;
     text-align: center;
 }
-.about div{
-    
-}
 .communicate span{
     color: #ec4899;
     font-weight: 600;
@@ -876,16 +867,8 @@ nav{
     z-index: -1;
     border-radius: 10px;
 }
-/* For the first li element */
- .nav-elements ul.elements li:nth-child(1):hover ~ span {
-
-    
-}
-
 /* For the second li element */
 .elements li:hover{
- 
-
    transition: all 0.5s;
 }
 #size{
@@ -920,9 +903,6 @@ nav{
 }
 .elements span{
     transition: 0.3s ease-in-out;
-}
-.project-info img:hover{
-    
 }
 .left{
    height: 120%;
