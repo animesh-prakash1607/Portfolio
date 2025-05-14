@@ -129,7 +129,7 @@ for (let i = 0; i < numBubbles; i++) {
   let size;
   if (window.innerWidth <= 768) {
     // Mobile view: smaller bubbles
-    size = Math.random() * 20 + 20; // 30px to 60px
+    size = Math.random() * 30 + 30; // 30px to 60px
   } else {
     // Desktop view: larger bubbles
     size = Math.random() * 100 + 100; // 100px to 200px
