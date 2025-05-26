@@ -30,6 +30,8 @@
 
 <body>
     <div id="bubble-container"></div>
+     <div class="cursor-outer"></div>
+<div class="cursor-inner"></div>
 
     <div class="main">
 
@@ -61,11 +63,11 @@
 
                 <div class="nav-elements">
                     <ul class="elements">
-                        <li><a id="black" href="#home">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li id="contact"><a href="#contacts">Contact</a></li>
+                        <li><a class="nav-link" id="black" href="#home">Home</a></li>
+                        <li><a class="nav-link" href="#about">About Me</a></li>
+                        <li><a class="nav-link" href="#skills">Skills</a></li>
+                        <li><a class="nav-link" href="#projects">Projects</a></li>
+                        <li id="contact"><a class="nav-link" href="#contacts">Contact</a></li>
 
                     </ul>
                 </div>
@@ -131,13 +133,17 @@
                             look forward to applying my knowledge to real-world projects and growing as a developer in this
                             ever-evolving field.</p> -->
                         <div>I am <span style="color: #00ff97; font-weight: 700;">Animesh Prakash</span>, currently
-                            pursuing a Diploma in Computer Science at
-                            Guru Nanak Dev College. I have a strong passion for full stack development
-                            and enjoy building dynamic, user-friendly web applications. With a solid
-                            understanding of both front-end and back-end technologies, I strive to
-                            create efficient and responsive solutions. I am always eager to take on
-                            new challenges and continue growing as a developer. My goal is to contribute
-                            to impactful projects while expanding my skill set.</div>
+                            pursuing a Diploma in Computer Science at DSEU. I’m a passionate and detail-oriented Full Stack Developer
+                             with a strong foundation in the MERN stack (MongoDB, Express, React, Node.js), I specialize in building 
+                             responsive, high-performance web applications that deliver seamless user experiences.
+                             <div>
+                                 Over time, I’ve worked on a variety of personal and team-based projects—including a real-time social media platform
+                        and smart tech solutions—focusing on both functionality and clean UI/UX. My development approach emphasizes scalable 
+                        architecture, clean code practices, and modern design principles.
+                             </div>
+                       I thrive in collaborative environments and love participating
+                         in coding challenges and hackathons. When I’m not coding, I’m usually exploring new tech, contributing to open-source projects, or
+                          refining my skills in frontend design and backend optimization.</div>
                         <div class="arrow"><img src="assets/svg/line2.svg" alt=""></div>
                         <div class="grid">
                             <div class="grid_data">Name: <span class="color">Animesh Prakash</span></div>
@@ -285,9 +291,6 @@
                             <div class="project-details-show">
                                 <h1 class="project-heading hide-lg" id="do">BrainHaven</h1>
                            <div class="project-deploy project-deploy2 hide-lg" id="do">
-                                    <a href="https://brainhaven.in/" target="_blank" class="deployment">
-                                        <img src="assets/svg/newTab.svg" width="30px" alt="">Live
-                                    </a>
 
                                     <a href="https://github.com/divyanshgoyal777/BrainHaven" target="_blank"
                                         class="deployment github">
@@ -320,18 +323,13 @@
                                         <img src="assets/svg/newTab.svg" width="30px" alt="">Live
                                     </a>
 
-                                    <a href="https://github.com/divyanshgoyal777/BrainHaven" target="_blank"
-                                        class="deployment github">
-                                        <img src="assets/svg/github2.svg" width="24px" alt="">Github
-                                    </a>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                 <div data-aos="fade-right"
+                 <div data-aos="fade-left"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
                     <!-- <div class="line1"></div> -->
@@ -402,7 +400,7 @@
      data-aos-offset="300"
      data-aos-easing="ease-in-sine">
                     <!-- <div class="line1"></div> -->
-                    <div class="real-project">
+                    <div class="real-project" id="library-h">
                         <span class="corner-line tl"></span>
                         <span class="corner-line tr"></span>
                         <span class="corner-line bl"></span>

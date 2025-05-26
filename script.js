@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.querySelector(".elements li a").style.color = "#ec4899";
+  document.querySelector(".elements li a").style.fontWeight = "600";
+
+  nav();
 
   // Cursor shadow effect
   const cursorShadow = document.createElement("div");
@@ -31,41 +34,53 @@ function nav() {
     let list = document.querySelectorAll(".elements li a");
     list.forEach((li) => {
       li.style.color = "white";
+      li.style.fontWeight = "400";
     });
     list[0].style.color = "#ec4899";
+    list[0].style.fontWeight = "600";
   });
 
   nav_lists[1].addEventListener("click", () => {
     let list = document.querySelectorAll(".elements li a");
     list.forEach((li) => {
       li.style.color = "white";
+      li.style.fontWeight = "400";
     });
     list[1].style.color = "#ec4899";
+        list[1].style.fontWeight = "600";
   });
 
   nav_lists[2].addEventListener("click", () => {
     let list = document.querySelectorAll(".elements li a");
     list.forEach((li) => {
       li.style.color = "white";
+      li.style.fontWeight = "400";
     });
     list[2].style.color = "#ec4899";
+        list[2].style.fontWeight = "600";
+
   });
 
   nav_lists[3].addEventListener("click", () => {
     let list = document.querySelectorAll(".elements li a");
     list.forEach((li) => {
       li.style.color = "white";
+      li.style.fontWeight = "400";
     });
     list[3].style.color = "#ec4899";
+        list[3].style.fontWeight = "600";
+
   });
 
   nav_lists[4].addEventListener("click", () => {
     let list = document.querySelectorAll(".elements li a");
     list.forEach((li) => {
       li.style.color = "white";
+      li.style.fontWeight = "400";
     });
     list[4].style.color = "#ec4899";
-  });
+        list[4].style.fontWeight = "600";
+  }); 
 
   let scroll = document.querySelectorAll(".elements li a");
   scroll.forEach(link => {
@@ -78,6 +93,7 @@ function nav() {
     });
   });
 }
+
 
 function hamburger() {
   let menu = document.querySelector(".ham");
@@ -157,3 +173,68 @@ function animate() {
 }
 
 animate();
+
+function nav2() {
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  // Mark the first item active on page load
+  window.addEventListener("DOMContentLoaded", () => {
+    if (navLinks.length > 0) {
+      navLinks[0].classList.add("active");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Remove 'active' from all
+      navLinks.forEach((l) => l.classList.remove("active"));
+
+      // Add 'active' to clicked link
+      this.classList.add("active");
+
+      // Scroll to section
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+}
+
+nav2();
+
+function setupCustomCursor() {
+  const outer = document.querySelector('.cursor-outer');
+  const inner = document.querySelector('.cursor-inner');
+
+  let mouseX = 0, mouseY = 0;
+  let currentX = 0, currentY = 0;
+  const delay = 0.15;
+
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    inner.style.left = mouseX + 'px';
+    inner.style.top = mouseY + 'px';
+  });
+
+  function animateOuter() {
+    currentX += (mouseX - currentX) * delay;
+    currentY += (mouseY - currentY) * delay;
+
+    outer.style.left = currentX + 'px';
+    outer.style.top = currentY + 'px';
+
+    requestAnimationFrame(animateOuter);
+  }
+
+  animateOuter();
+}
+
+setupCustomCursor();
+
+
+
