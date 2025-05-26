@@ -213,26 +213,49 @@ function setupCustomCursor() {
   let currentX = 0, currentY = 0;
   const delay = 0.15;
 
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+  // Function to toggle custom cursor visibility
+  function toggleCursorVisibility() {
+    if (window.innerWidth < 500) {
+      outer.style.display = 'none';
+      inner.style.display = 'none';
+      document.body.style.cursor = 'default';
+    } else {
+      outer.style.display = 'block';
+      inner.style.display = 'block';
+      document.body.style.cursor = 'none';
+    }
+  }
 
-    inner.style.left = mouseX + 'px';
-    inner.style.top = mouseY + 'px';
+  // Update position only if custom cursor is enabled
+  document.addEventListener('mousemove', (e) => {
+    if (window.innerWidth >= 500) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      inner.style.left = mouseX + 'px';
+      inner.style.top = mouseY + 'px';
+    }
   });
 
   function animateOuter() {
-    currentX += (mouseX - currentX) * delay;
-    currentY += (mouseY - currentY) * delay;
+    if (window.innerWidth >= 500) {
+      currentX += (mouseX - currentX) * delay;
+      currentY += (mouseY - currentY) * delay;
 
-    outer.style.left = currentX + 'px';
-    outer.style.top = currentY + 'px';
-
+      outer.style.left = currentX + 'px';
+      outer.style.top = currentY + 'px';
+    }
     requestAnimationFrame(animateOuter);
   }
 
+  // Handle screen size changes
+  window.addEventListener('resize', toggleCursorVisibility);
+  window.addEventListener('load', toggleCursorVisibility);
+
+  toggleCursorVisibility();
   animateOuter();
 }
+
 
 setupCustomCursor();
 
