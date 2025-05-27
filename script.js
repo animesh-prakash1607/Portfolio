@@ -205,16 +205,15 @@ function nav2() {
 
 nav2();
 
-function setupCustomCursor() {
+function setupCustomCursor() { 
   const outer = document.querySelector('.cursor-outer');
   const inner = document.querySelector('.cursor-inner');
 
   let mouseX = 0, mouseY = 0;
   let currentX = 0, currentY = 0;
-  const delay = 0.15;
+  const delay = 0.1;  // increase delay for smoother, slower follow
 
-  // Function to toggle custom cursor visibility
-  function toggleCursorVisibility() {
+  function toggleCursor() {
     if (window.innerWidth < 500) {
       outer.style.display = 'none';
       inner.style.display = 'none';
@@ -226,38 +225,44 @@ function setupCustomCursor() {
     }
   }
 
-  // Update position only if custom cursor is enabled
+  toggleCursor();
+  window.addEventListener('resize', toggleCursor);
+
   document.addEventListener('mousemove', (e) => {
     if (window.innerWidth >= 500) {
       mouseX = e.clientX;
       mouseY = e.clientY;
 
-      inner.style.left = mouseX + 'px';
-      inner.style.top = mouseY + 'px';
+      inner.style.left = `${mouseX}px`;
+      inner.style.top = `${mouseY}px`;
     }
   });
 
   function animateOuter() {
     if (window.innerWidth >= 500) {
-      currentX += (mouseX - currentX) * delay;
-      currentY += (mouseY - currentY) * delay;
+      const dx = mouseX - currentX;
+      const dy = mouseY - currentY;
 
-      outer.style.left = currentX + 'px';
-      outer.style.top = currentY + 'px';
+      const angle = Math.atan2(dy, dx) * (180 / Math.PI); // in degrees
+      const velocity = Math.sqrt(dx * dx + dy * dy);
+
+      currentX += dx * delay;
+      currentY += dy * delay;
+
+      // Scale more when moving faster, but reduce vertical stretch
+      const scale = Math.min(1 + velocity / 100, 1.5);
+      const verticalScale = 1; // no vertical stretch
+
+      outer.style.left = `${currentX}px`;
+      outer.style.top = `${currentY}px`;
+
+      outer.style.transform = `translate(-50%, -50%) rotate(${angle}deg) scale(${scale}, ${verticalScale})`;
     }
+
     requestAnimationFrame(animateOuter);
   }
 
-  // Handle screen size changes
-  window.addEventListener('resize', toggleCursorVisibility);
-  window.addEventListener('load', toggleCursorVisibility);
-
-  toggleCursorVisibility();
   animateOuter();
 }
 
-
-setupCustomCursor();
-
-
-
+window.addEventListener('DOMContentLoaded', setupCustomCursor);
