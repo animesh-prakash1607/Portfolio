@@ -284,7 +284,7 @@ body, a, button {
     height: 9vh;
 }
 .second_page{
-    height: 90vh;
+    height: 100vh;
     padding: 0 60px;
     
 }
@@ -427,7 +427,7 @@ body, a, button {
     justify-content: center;
 }
 .page4{
-    height: 170vh;
+    height: 180vh;
     padding: 10px;
     margin-top: -10px;
     position: relative;
@@ -499,8 +499,15 @@ body, a, button {
     width: 60px;
 }
 .page5{
-    height: 280vh;
+    height: 360vh;
    
+}
+#instagram-logo{
+    margin-bottom: -8px;
+    margin-left: 8px;
+}
+#instagram-logo img{
+    width: 35px;
 }
 #h5{
      text-align: center;
@@ -861,6 +868,277 @@ body, a, button {
     justify-content: center;
     font-size: 22px;
     gap: 8px;
+}
+#footer-line{
+     margin-bottom: 40px;
+}
+.custom-footer {
+  
+  color: #eee;
+  padding-top: 40px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+.footer-container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 30px; /* Increased from 40px to 80px for more separation */
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+#footer-contacts{
+    width: 80% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 200px;
+  margin-bottom: 30px;
+}
+.footer-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer-logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  background: #181820;
+}
+.footer-section.links {
+  flex: 1 1 120px;
+  min-width: 120px;
+ 
+}
+.footer-section.about h2 {
+  font-size: 1.2em;
+  margin: 0 0 2px 0;
+  color: #fff;
+}
+.subtitle {
+  display: block;
+  font-size: 1em;
+  color: #ec4899;
+  margin-bottom: 10px;
+}
+#footer-description {
+  font-size: 0.9em;
+  color: #bbb;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.footer-coffee-btn {
+  border: 1px solid #222;
+  background: transparent;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 32px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-bottom: 22px;
+  transition: background 0.2s;
+  margin-top: 10px;
+}
+.footer-coffee-btn:hover {
+  background: #181820;
+}
+.footer-socials {
+  margin-top: 18px;
+  display: flex;
+  gap: 16px;
+  transition: 0.5s ease;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  transition: 0.5s ease;
+  overflow: hidden;
+
+}
+
+#linkedin-icon{
+    width: 38px !important;
+    height: 38px !important;
+}
+
+.footer-social-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s;
+}
+.footer-socials a:hover {
+  transform: scale(1.2);
+}
+.footer-section h3 {
+  color: #fff;
+  font-size: 1.22em;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.footer-section ul li{
+      display: inline-block;
+}
+.footer-section ul li a{
+    text-decoration: none;
+  color: #333;
+  position: relative;
+  padding-bottom: 4px;
+  font-size: 16px;
+}
+.footer-section ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ec4899;
+  transition: width 0.3s ease-in-out;
+}
+.footer-section ul li a:hover::before{
+  width: 100%;
+}
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-section ul li a:hover {
+  color: #ec4899;
+}
+.footer-section.services ul li a[style] {
+  font-weight: 600;
+}
+.footer-section.contact ul li {
+  margin-bottom: 8px;
+  color: #bbb;
+}
+.footer-contact-btn {
+  margin-top: 14px;
+  border: 1px solid #222;
+  background: transparent;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 32px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-contact-btn:hover {
+  background: #181820;
+}
+.footer-bottom {
+  margin-top: 36px;
+  padding: 18px 0 12px 0;
+  text-align: center;
+}
+.footer-copyright {
+  color: #aaa;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+}
+.footer-copyright span {
+  color: #ec4899;
+  font-weight: 600;
+}
+.footer-section.fun-fact {
+  flex: 1 1 220px;
+  min-width: 220px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#fun-fact-box {
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  min-height: 56px;
+  font-size: 1em;
+  box-shadow: 0 3px 14px #ec4899;
+  width: 90%;
+}
+
+.fun-fact-btn {
+  border: 1px solid #ec4899;
+  background: transparent;
+  color: #ec4899;
+  padding: 10px 22px;
+  border-radius: 24px;
+  font-size: 1em;
+  font-weight: 600;
+  transition: 0.5s ease;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.fun-fact-btn:hover {
+  background: #ec4899;
+  color: #101014;
+}
+
+@media (max-width: 1100px) {
+  .footer-section.fun-fact {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    padding: 0 16px;
+  }
+  #footer-contacts {
+    align-items: start;
+  }
+  .footer-section ul{
+    display: flex;
+    gap: 20px;
+  }
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  .footer-section {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+   .footer-section.links {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .fun-fact-btn{
+    width: 170px;
+  }
 }
 .click img{
     width: 30px;
@@ -1277,16 +1555,22 @@ body, a, button {
 
 @media screen and (max-width:850px){
     .first_page{
-        height: 90vh;
+        height: 95vh;
     }
     .second_page{
+        padding: 0px 0px;
         height: 60vh;
+        
+    }
+    .page2{
+        width: 90%;
+        margin: auto;
     }
    .content{
     padding-left: 40px;
    }
    .page4{
-    height: 110vh;
+    height: 140vh;
    }
    
    .page6{
@@ -1325,6 +1609,14 @@ body, a, button {
         flex-direction: column;
         align-items: start;
         justify-content: start;
+    }
+    .footer-section ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .project-img img{
@@ -1368,6 +1660,18 @@ body, a, button {
         flex-direction: row !important;
         margin-top: 0px;
     }
+    .about{
+        flex: 1;
+    }
+     .me-photo{
+        display: none;
+    }
+      .second_page{
+        width: 100%;
+        height: 75vh;
+        margin: auto;
+    }
+    
   }
 
 @media screen and (max-width:500px){
@@ -1431,9 +1735,7 @@ body, a, button {
     #element2{
         font-size: 1.7rem;
     }
-    .me-photo{
-        display: none;
-    }
+   
     .first_page{
         height: 110vh;
    padding-left: 0px;
@@ -1442,12 +1744,7 @@ body, a, button {
     .column{
        height: 26vh;
     }
-    .second_page{
-        width: 85%;
-        height: 85vh;
-        padding: 0px 25px;
-        margin: auto;
-    }
+  
     .content2{
         flex-direction: column;
          position: relative;
@@ -1461,10 +1758,10 @@ body, a, button {
         height: 125px;
     }
     .page4{
-        height: 175vh;
+        height: 185vh;
     }
     .page5{
-        height: 310vh;
+        height: 410vh;
     }
     .Projects{
         gap: 40px;
@@ -1539,10 +1836,10 @@ body, a, button {
         width: 80%;
     }
     .page5{
-        height: 350vh;
+        height: 450vh;
     }
     .page4{
-        height: 200vh;
+        height: 210vh;
         margin-top: -130px;
     }
 
@@ -1565,9 +1862,9 @@ body, a, button {
         top: 115px;
     }
     .second_page{
+        
         height: 110vh;
-        width: 87%;
-        padding: 0px 25px;
+        width: 100%;
     }
     .communication{
         gap: 70px;
@@ -1588,6 +1885,9 @@ body, a, button {
     .first-two{
         gap: 15px;
     }
+    .page5{
+        height: 380vh;
+    }
 }
 @media screen and (max-width:1100px) and (min-width:800px){
     .first_page{
@@ -1597,7 +1897,7 @@ body, a, button {
         height: 45vh;
     }
     .page4{
-        height: 85vh;
+        height: 100vh;
     }
     .content{
         height: 50vh;
@@ -1606,7 +1906,7 @@ body, a, button {
         gap: 70px;
     }
     .page5{
-        height: 130vh;
+        height: 170vh;
     }
     .page6{
         height: 120vh;
@@ -1698,4 +1998,22 @@ body {
 
 .nav-link.active::after {
   width: 100%;
+}
+
+@media screen and (max-width:380px) {
+    .first_page{
+        height: 125vh;
+    }
+    .second_page{
+        height: 125vh;
+    }
+    .page4{
+        height: 230vh;
+    }
+    .page5{
+        height: 510vh;
+    }
+    #cityfix{
+        height: 920px;
+    }
 }

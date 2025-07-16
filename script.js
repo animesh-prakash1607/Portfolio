@@ -265,4 +265,19 @@ function setupCustomCursor() {
   animateOuter();
 }
 
+// Add this script at the end of your HTML or in your JS bundle
+
+const funFacts = [
+  "Did you know? The first computer bug was an actual moth!",
+  "Octopuses have three hearts.",
+  "Bananas are berries, but strawberries aren’t.",
+  "The unicorn is the national animal of Scotland.",
+  "A group of flamingos is called a 'flamboyance'."
+];
+
+function showRandomFact() {
+  const randomIndex = Math.floor(Math.random() * funFacts.length);
+  document.getElementById('fun-fact-text').textContent = funFacts[randomIndex];
+}
+
 window.addEventListener('DOMContentLoaded', setupCustomCursor);
