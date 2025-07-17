@@ -228,15 +228,32 @@ function setupCustomCursor() {
   toggleCursor();
   window.addEventListener('resize', toggleCursor);
 
-  document.addEventListener('mousemove', (e) => {
-    if (window.innerWidth >= 500) {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
+ document.addEventListener('mousemove', (e) => {
+  if (window.innerWidth >= 500) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
 
-      inner.style.left = `${mouseX}px`;
-      inner.style.top = `${mouseY}px`;
+    inner.style.left = `${mouseX}px`;
+    inner.style.top = `${mouseY}px`;
+
+    const element = document.elementFromPoint(mouseX, mouseY);
+
+    if (element) {
+      if (element.classList.contains('hovver')) {
+        outer.classList.add('active');
+        console.log('hovver');
+      }
+      else if(element.classList.contains('hovver2')) {
+        outer.classList.add('active2');
+      }
+      else {
+        outer.classList.remove('active');
+        outer.classList.remove('active2');
+      }
     }
-  });
+  }
+});
+
 
   function animateOuter() {
     if (window.innerWidth >= 500) {

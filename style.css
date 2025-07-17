@@ -96,7 +96,15 @@ body, a, button {
   transition: background-color 0.2s ease, width 0.15s, height 0.15s, transform 0.05s;
   mix-blend-mode: difference;
 }
+.cursor-outer.active {
+  background-color: whitesmoke;
+  backdrop-filter: none;
+}
 
+.cursor-outer.active2 {
+  background-color: white;
+  backdrop-filter: none;
+}
 
 /* Inner Circle (small black dot) */
 .cursor-inner {
